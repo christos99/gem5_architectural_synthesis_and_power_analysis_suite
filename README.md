@@ -1,15 +1,15 @@
-# 9432_Christos_Chrysikos
-#Ergastirio Arxitektoniki 1o Gem 5
+## 9432_Christos_Chrysikos
+## Ergastirio Arxitektoniki 1o Gem 5
 --------------------------------------------------------------------------------------------------
-###**1.a**
+1.   
 **[Info from starter_se.py, devices.py]**  
-CPU Type = "Minor"  _//Decalred at the command_  
-self.clusters = []   _//line 90 starter_se.py_ 
+CPU Type = "Minor"  _//Decalred at the command_    
+self.clusters = []   _//line 90 starter_se.py_  
 self.num_cpus = 0    _//line 91 starter_se.py_  
 
 Frequency = 1 Ghz  _//line 95 starter_se.py_    
 
-Basic Units = 
+* **Basic Units =** 
 	* L1Instruction Cache
 	* L1Data Cache
 	* Walk cache
@@ -18,51 +18,51 @@ Basic Units =
 
 ####**Cache:**
 
-**L1Instruction Cache:**
+* **L1Instruction Cache:**
     * tag_latency = 1
     * data_latency = 1
     * response_latency = 1
     * mshrs = 4
     * tgts_per_mshr = 8
     * size = '48kB'
-    * assoc = 3
+    * assoc = 3  
     
-**L1Data Cache:**
-    tag_latency = 2
-    data_latency = 2
-    response_latency = 1
-    mshrs = 16
-    tgts_per_mshr = 16
-    size = '32kB'
-    assoc = 2
-    write_buffers = 16
+* **L1Data Cache:**
+    * tag_latency = 2
+    * data_latency = 2
+    * response_latency = 1
+    * mshrs = 16
+    * tgts_per_mshr = 16
+    * size = '32kB'
+    * assoc = 2
+    * write_buffers = 16  
     
-**Walk Cache:**
-    tag_latency = 4
-    data_latency = 4
-    response_latency = 4
-    mshrs = 6
-    tgts_per_mshr = 8
-    size = '1kB'
-    assoc = 8
-    write_buffers = 16
+* **Walk Cache:**
+    * tag_latency = 4
+    * data_latency = 4
+    * response_latency = 4
+    * mshrs = 6
+    * tgts_per_mshr = 8
+    * size = '1kB'
+    * assoc = 8  
+    * write_buffers = 16    
     
-**L2 Unified Cache:**
-    tag_latency = 12
-    data_latency = 12
-    response_latency = 5
-    mshrs = 32
-    tgts_per_mshr = 8
-    size = '1MB'
-    assoc = 16
-    write_buffers = 8
-    clusivity='mostly_excl'
+* **L2 Unified Cache:**
+   * tag_latency = 12
+   * data_latency = 12
+   * response_latency = 5
+   * mshrs = 32
+   * tgts_per_mshr = 8
+   * size = '1MB'
+   * assoc = 16
+   * write_buffers = 8
+   * clusivity='mostly_excl'  
     
-####**Memory:**
-membus = SystemXBar() 
-memoryMode() == "timing":       	                                          //line 116 starter_se.py
+* ####**Memory:**
+  * membus = SystemXBar() 
+  * memoryMode() == "timing"  _//line 116 starter_se.py_  
 
-Voltage: "voltage_domain = VoltageDomain(voltage="3.3V")" 	              	//line 94 starter_se.py
+Voltage: "voltage_domain = VoltageDomain(voltage="3.3V")"  _//line 94 starter_se.py
 
 
 
