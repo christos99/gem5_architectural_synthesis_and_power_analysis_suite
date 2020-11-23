@@ -4,6 +4,13 @@
 --------------------------------------------------------------------------------------------------
 ## 1.  
 
+#### Information extracted from the first simulation
+**cmd:**		
+	
+	$ ./build/ARM/gem5.opt -d hello_result configs/example/arm/starter_se.py --cpu="minor" "tests/test-progs/hello/bin/arm/linux/hello"
+	
+#### Extracting values from file [starter_se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/starter_se.py)		
+
 #### CPU:
 * CPU Type = "Minor"  _//Decalred at the command_    
 * self.clusters = []   _//line 90 starter_se.py_  
@@ -74,6 +81,8 @@
 
 ### 2.a  
 
+#### Extracting values from file [config.ini](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/config.ini)
+
 #### CPU:
   * CPU Type = "Minor"  //line 65 config.ini 
   * self.clusters = []  
@@ -98,14 +107,14 @@
 ### 2.b  
 
  Number of Commited Instructions = 5028  
-_This are not finalized i would like to add more stuff and reference my answers if i had the time_
+_This is not finalized i would like to add more stuff and reference my answers if i had the time_
 _The number differs because we use a different system than the one that was used to provide the statistics_
 
 ### 2.c
-_This are not finalized i would like to add more stuff and reference my answers if i had the time_
+_This is not finalized i would like to add more stuff and reference my answers if i had the time_
 
 
-**[Info from [config.ini](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/config.ini)]** 
+**Info from [config.ini](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/config.ini)** 
 
 **---------------------------------------------------------------------------------------------**
 
@@ -205,7 +214,7 @@ Simulation done using different configuration file (Before = [starter_se.py](htt
 ### 3.b
 
 Time difference between the 2 simulations  = 0.000037 - 0.000033 = 0.000004s
-_This are not finalized i would like to add more stuff and reference my answers if i had the time_
+_This is not finalized i would like to add more stuff and reference my answers if i had the time_
 >The TimingSimpleCPU uses a differnet memory type than the MinorCPU which makes the simulation run a litle bit longer. Regardless the time differnce is unsignificant and we can't run into any assumptions for the general performance difference of this 2 processors referring to this simulation.
 
 >We could also refer to the small utilization of memory while running this program and suggest that this is the reason the simulation times are very much the same.
