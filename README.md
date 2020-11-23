@@ -221,8 +221,8 @@ _This is not finalized i would like to add more stuff and reference my answers i
 ### 3.c  
 
 #### Third Simulation Run:
-
-CMD: 	
+_Simulation run with change of cores value to 12_
+ * CMD: 	
 	
 	build/ARM/gem5.opt configs/example/se.py --cmd=tests/test-progs/hello/bin/arm/linux/myprog_arm --cpu-type=MinorCPU --l1d_size=64kB --l1i_size=16kB --caches -n 12
 	
@@ -236,6 +236,7 @@ CMD:
 	
 	
  #### Fourth Simulation Run:
+ _Simulation run with change of cores value to 12_
  
  * CMD: 		
  	
