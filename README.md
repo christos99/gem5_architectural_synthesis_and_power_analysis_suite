@@ -215,9 +215,10 @@ Simulation done using different configuration file (Before = [starter_se.py](htt
 
 Time difference between the 2 simulations  = 0.000037 - 0.000033 = 0.000004s
 _This is not finalized i would like to add more stuff and reference my answers if i had the time_
->The TimingSimpleCPU uses a differnet memory type than the MinorCPU which makes the simulation run a litle bit longer. Regardless the time differnce is unsignificant and we can't run into any assumptions for the general performance difference of this 2 processors referring to this simulation.
 
->We could also refer to the small utilization of memory while running this program and suggest that this is the reason the simulation times are very much the same.
+>The TimingSimpleCPU is the version of SimpleCPU that uses timing memory accesses. It stalls on cache accesses and waits for the memory system to respond prior to proceeding. Regardless the time differnce is unsignificant and we can't run into any assumptions for the general performance difference of this 2 processors referring to this simulation.
+
+
 	
 	
 		
