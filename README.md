@@ -95,3 +95,11 @@ a.
 	Number of Commited Instructions = 5028  
 	
 _The number differs because we use a different system than the one that was used to provide the statistics_
+
+---------------------------------------------------------------------------------------------
+
+3.  
+#### IN-ORDER CPU's
+
+
+
