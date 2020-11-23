@@ -2,16 +2,18 @@
 #Ergastirio Arxitektoniki 1o Gem 5
 --------------------------------------------------------------------------------------------------
 ###**1.a**
-**[Info from starter_se.py, devices.py]**
+**[Info from starter_se.py, devices.py]**  
 CPU Type = "Minor"   							                                           //Decalred at the command  
 self.clusters = []   							                                           //line 90 starter_se.py  
 self.num_cpus = 0  							                                           //line 91 starter_se.py  
 
-Frequency = 1 Ghz 							                                           //line 95 starter_se.py  
+Frequency = 1 Ghz 							                                           //line 95 starter_se.py    
 
-Basic Units = L1Instruction Cache, L1Data Cache,                           //line 66-69 starter_se.py
-               Walk cache	
-               L2 cache
+Basic Units = 
+	* L1Instruction Cache
+	* L1Data Cache
+	* Walk cache
+	* L2 cache
 
 
 ####**Cache:**
