@@ -2,7 +2,8 @@
 ## Ergastirio Arxitektoniki 1o Gem 5
 --------------------------------------------------------------------------------------------------
 1.   
-**[Info from starter_se.py, devices.py]**  
+**[Info from starter_se.py, devices.py]**   
+#### CPU:
 * CPU Type = "Minor"  _//Decalred at the command_    
 * self.clusters = []   _//line 90 starter_se.py_  
 * self.num_cpus = 0    _//line 91 starter_se.py_  
@@ -15,7 +16,7 @@
 	* L2 cache
 
 
-####**Cache:**
+#### **Cache:**
 
 * **L1Instruction Cache:**
     * tag_latency = 1
@@ -57,7 +58,7 @@
    * write_buffers = 8
    * clusivity='mostly_excl'  
     
-* ####**Memory:**
+#### **Memory:**
   * membus = SystemXBar() 
   * memoryMode() == "timing"  _//line 116 starter_se.py_  
 
