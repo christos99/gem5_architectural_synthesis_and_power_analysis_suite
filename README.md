@@ -3,7 +3,7 @@
 --------------------------------------------------------------------------------------------------
 ## 1.  
 
-**[Info from starter_se.py, devices.py]**   
+**[Info from [starter_se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/starter_se.py), [devices.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/devices.py)]**   
 
 #### CPU:
 * CPU Type = "Minor"  _//Decalred at the command_    
@@ -64,7 +64,8 @@
   * membus = SystemXBar() 
   * memoryMode() == "timing"  _//line 116 starter_se.py_  
 
-Voltage: "voltage_domain = VoltageDomain(voltage="3.3V")"  _//line 94 starter_se.py
+#### Voltage: 
+  * voltage_domain = VoltageDomain(voltage="3.3V")"  _//line 94 starter_se.py_
 
 
 
@@ -73,32 +74,32 @@ Voltage: "voltage_domain = VoltageDomain(voltage="3.3V")"  _//line 94 starter_se
 
 ### 2.a  
 
-**[Info from config.ini]**  
+**[Info from [config.ini](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/config.ini)]**  
 
 #### CPU:
-	 CPU Type = "Minor"  //line 65 config.ini 
-	 self.clusters = []  
-	 self.num_cpus = 0    
-	 Frequency = 1 Ghz  //line 8 config.ini  
+  * CPU Type = "Minor"  //line 65 config.ini 
+  * self.clusters = []  
+  * self.num_cpus = 0    
+  * Frequency = 1 Ghz  //line 8 config.ini  
 
 
 
 #### Basic Units:
-	devices.L1I, devices.L1D, devices.WalkCache, devices.L2
+  * devices.L1I, devices.L1D, devices.WalkCache, devices.L2
 
 
 #### Caches:  
-	"cache_line_size = 64" //line 15 config.ini
+  * cache_line_size = 64" //line 15 config.ini
 
 
 #### Memory:  
-	membus = SystemXBar()   
-	cpu_cluster.memoryMode() == "timing":  //line 20 config.ini
+  * membus = SystemXBar()   
+  * cpu_cluster.memoryMode() == "timing":  //line 20 config.ini
 #### Voltage:  
-	"voltage_domain = VoltageDomain(voltage="3.3V")"  //line 48 config.ini
+  * voltage_domain = VoltageDomain(voltage="3.3V")"  //line 48 config.ini
 ### 2.b  
 
-	Number of Commited Instructions = 5028  
+ Number of Commited Instructions = 5028  
 	
 _The number differs because we use a different system than the one that was used to provide the statistics_
 
@@ -157,7 +158,7 @@ Minor is an in-order processor model with a fixed pipeline but configurable data
 You can find reference [here](https://www.gem5.org/documentation/general_docs/cpu_models/minor_cpu)
 
 ### 3.a
-The program that I created and used for my simulations is myprog.c with then i compiled for arm into myprog_arm:
+The program that I created and used for my simulations is [myprog.c](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog.c) with then i compiled for arm into [myprog_arm](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm):
 		 
 		//A simple progrma that prints a "A sample C program" output
 		#include<stdio.h>
@@ -169,6 +170,45 @@ The program that I created and used for my simulations is myprog.c with then i c
 		
 		}
 		//end
+		
+Simulation done using different configuration file (Before = [starter_se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/starter_se.py) -> Now = [se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/se.py))
+
+#### First Simulation Run:
+ * CMD: 	
+	
+	build/ARM/gem5.opt configs/example/se.py --cmd=tests/test-progs/hello/bin/arm/linux/myprog_arm --cpu-type=MinorCPU --l1d_size=64kB --l1i_size=16kB --caches  
+	
+ * CPU TYPE = MinorCPU	
+ * configuration file = [se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/se.py)
+ * program file = [myprog_arm](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm)
+ * simulation seconds = 0.000033s  
+ 
+ [Reference File](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm%20Results/my_prog_result_MinorCPU_se_py/stats.txt)
+ 
+ #### Second Simulation Run:
+ 
+ * CMD: 	
+	
+	build/ARM/gem5.opt configs/example/se.py --cmd=tests/test-progs/hello/bin/arm/linux/myprog_arm --cpu-type=TimingSimpleCPU --l1d_size=64kB --l1i_size=16kB --caches  
+	
+ * CPU TYPE = TimingSimpleCPU	
+ * configuration file = [se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/se.py)
+ * program file = [myprog_arm](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm)
+ * simulation seconds =  0.000037s  
+ 
+[Reference File](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm%20Results/my_prog_result_TimingSimpleCPU_se_py/stats.txt)
+
+### 3.b
+
+Time difference between the 2 simulations  = 0.000037 - 0.000033 = 0.000004s
+_This are not finalized i would like to add more stuff and reference my answers if i had the time_
+>The TimingSimpleCPU uses a differnet memory type than the MinorCPU which makes the simulation run a litle bit longer. Regardless the time differnce is unsignificant and we can't run into any assumptions for the general performance difference of this 2 processors referring to this simulation.
+
+>We could also refer to the small utilization of memory while running this program and suggest that this is the reason the simulation times are very much the same.
+	
+	
+		
+
 
 
 
