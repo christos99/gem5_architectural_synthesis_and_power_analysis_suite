@@ -12,8 +12,7 @@
 #### Extracting values from file [starter_se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/starter_se.py)		
 
 #### CPU:
-* CPU Type = "Minor"  _//Decalred at the command_    
-* self.clusters = []   _//line 90 starter_se.py_  
+* CPU Type = "Minor"  _//Decalred at the command_     
 * self.num_cpus = 0    _//line 91 starter_se.py_  
 * Frequency = 1 Ghz  _//line 95 starter_se.py_      
 
@@ -84,8 +83,7 @@
 #### Extracting values from file [config.ini](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/config.ini)
 
 #### CPU:
-  * CPU Type = "Minor"  //line 65 config.ini 
-  * self.clusters = []  
+  * CPU Type = "Minor"  //line 65 config.ini   
   * self.num_cpus = 0    
   * Frequency = 1 Ghz  //line 8 config.ini  
 
@@ -173,7 +171,7 @@ You can find reference [here](https://www.gem5.org/documentation/general_docs/cp
 ### 3.a
 The program that I created and used for my simulations is [myprog.c](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog.c) with then i compiled for arm into [myprog_arm](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm):
 		 
-		//A simple progrma that prints a "A sample C program" output
+		//A simple program that prints a "A sample C program" output
 		#include<stdio.h>
 		
 		int main()
