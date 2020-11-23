@@ -67,9 +67,8 @@
 #### Voltage: 
   * voltage_domain = VoltageDomain(voltage="3.3V")"  _//line 94 starter_se.py_
 
+**---------------------------------------------------------------------------------------------**
 
-
----------------------------------------------------------------------------------------------
 ## 2 
 
 ### 2.a  
@@ -100,10 +99,13 @@
 ### 2.b  
 
  Number of Commited Instructions = 5028  
-	
+_This are not finalized i would like to add more stuff and reference my answers if i had the time_
 _The number differs because we use a different system than the one that was used to provide the statistics_
 
----------------------------------------------------------------------------------------------
+### 2.c
+_This are not finalized i would like to add more stuff and reference my answers if i had the time_
+
+**---------------------------------------------------------------------------------------------**
 
 
 ## 3. IN-ORDER CPU's:
@@ -211,6 +213,6 @@ _This are not finalized i would like to add more stuff and reference my answers 
 
 
 
-
+**---------------------------------------------------------------------------------------------**
 
 
