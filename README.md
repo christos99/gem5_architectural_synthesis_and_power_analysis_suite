@@ -1,5 +1,5 @@
 # 9432_Christos_Chrysikos_Omada_B_7 
-# Ergastirio 1o Arxitektoniki - LAb 1 Computer Architecture
+# Ergastirio 1o Arxitektoniki - LAB 1 Computer Architecture
 # gem5
 --------------------------------------------------------------------------------------------------
 ## 1.  
