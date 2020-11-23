@@ -68,23 +68,30 @@ Voltage: "voltage_domain = VoltageDomain(voltage="3.3V")"  _//line 94 starter_se
 
 ---------------------------------------------------------------------------------------------
 
-###**2.a**
-**[Info from config.ini]**
-
-CPU Type = "Minor" 						                                             	//line 65 config.ini
-self._num_cpus = 0 							
-Frequency = 1 Ghz 						                                             	//line 8 config.ini
-
-Basic Units = devices.L1I, devices.L1D, devices.WalkCache,
-               devices.L2
+2. **[Info from config.ini]**
+#### CPU:
+	 CPU Type = "Minor"  //line 65 config.ini 
+	 self.clusters = []  
+	 self.num_cpus = 0    
+	 Frequency = 1 Ghz  //line 8 config.ini  
 
 
-Caches = "cache_line_size = 64" 					                                    //line 15 config.ini
+
+#### Basic Units:
+	devices.L1I, devices.L1D, devices.WalkCache, devices.L2
 
 
-Memory: membus = SystemXBar()   
-	cpu_cluster.memoryMode() == "timing": 			                                //line 20 config.ini
-Voltage: "voltage_domain = VoltageDomain(voltage="3.3V")" 		                //line 48 config.ini
-###**2.b**
-**Number of Commited Instructions** = 5028
-The number differs because we use a different system than the one that was used to provide the statistics
+#### Caches:  
+	"cache_line_size = 64" //line 15 config.ini
+
+
+#### Memory:  
+	membus = SystemXBar()   
+	cpu_cluster.memoryMode() == "timing":  //line 20 config.ini
+#### Voltage:  
+	"voltage_domain = VoltageDomain(voltage="3.3V")"  //line 48 config.ini
+a.  
+
+	Number of Commited Instructions = 5028  
+	
+_The number differs because we use a different system than the one that was used to provide the statistics_
