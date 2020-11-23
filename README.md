@@ -1,5 +1,5 @@
-## 9432_Christos_Chrysikos
-## Ergastirio Arxitektoniki 1o Gem 5
+## 9432_Christos_Chrysikos_Omada_B_7
+## Ergastirio Arxitektoniki 1o gem5
 --------------------------------------------------------------------------------------------------
 ## 1.  
 
