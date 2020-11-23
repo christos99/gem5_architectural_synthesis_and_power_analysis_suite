@@ -1,10 +1,8 @@
-# 9432_Christos_Chrysikos_Omada_B_7
-# Ergastirio 1o Arxitektoniki 
+# 9432_Christos_Chrysikos_Omada_B_7 
+# Ergastirio 1o Arxitektoniki - LAb 1 Computer Architecture
 # gem5
 --------------------------------------------------------------------------------------------------
 ## 1.  
-
-**[Info from [starter_se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/starter_se.py), [devices.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/devices.py)]**   
 
 #### CPU:
 * CPU Type = "Minor"  _//Decalred at the command_    
@@ -67,14 +65,14 @@
 
 #### Voltage: 
   * voltage_domain = VoltageDomain(voltage="3.3V")"  _//line 94 starter_se.py_
+  
+  **[Info from [starter_se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/starter_se.py), [devices.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/devices.py)]** 
 
 **---------------------------------------------------------------------------------------------**
 
 ## 2 
 
 ### 2.a  
-
-**[Info from [config.ini](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/config.ini)]**  
 
 #### CPU:
   * CPU Type = "Minor"  //line 65 config.ini 
@@ -105,6 +103,9 @@ _The number differs because we use a different system than the one that was used
 
 ### 2.c
 _This are not finalized i would like to add more stuff and reference my answers if i had the time_
+
+
+**[Info from [config.ini](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/config.ini)]** 
 
 **---------------------------------------------------------------------------------------------**
 
