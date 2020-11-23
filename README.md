@@ -3,11 +3,11 @@
 --------------------------------------------------------------------------------------------------
 ###**1.a**
 **[Info from starter_se.py, devices.py]**  
-CPU Type = "Minor"   							                                           //Decalred at the command  
-self.clusters = []   							                                           //line 90 starter_se.py  
-self.num_cpus = 0  							                                           //line 91 starter_se.py  
+CPU Type = "Minor"  _//Decalred at the command_  
+self.clusters = []   _//line 90 starter_se.py_ 
+self.num_cpus = 0    _//line 91 starter_se.py_  
 
-Frequency = 1 Ghz 							                                           //line 95 starter_se.py    
+Frequency = 1 Ghz  _//line 95 starter_se.py_    
 
 Basic Units = 
 	* L1Instruction Cache
@@ -19,13 +19,13 @@ Basic Units =
 ####**Cache:**
 
 **L1Instruction Cache:**
-    tag_latency = 1
-    data_latency = 1
-    response_latency = 1
-    mshrs = 4
-    tgts_per_mshr = 8
-    size = '48kB'
-    assoc = 3
+    * tag_latency = 1
+    * data_latency = 1
+    * response_latency = 1
+    * mshrs = 4
+    * tgts_per_mshr = 8
+    * size = '48kB'
+    * assoc = 3
     
 **L1Data Cache:**
     tag_latency = 2
