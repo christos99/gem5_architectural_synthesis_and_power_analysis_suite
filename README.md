@@ -1,7 +1,7 @@
 ## 9432_Christos_Chrysikos
 ## Ergastirio Arxitektoniki 1o Gem 5
 --------------------------------------------------------------------------------------------------
-1.  
+## 1.  
 
 **[Info from starter_se.py, devices.py]**   
 
@@ -69,6 +69,7 @@ Voltage: "voltage_domain = VoltageDomain(voltage="3.3V")"  _//line 94 starter_se
 
 
 ---------------------------------------------------------------------------------------------
+## 2 
 
 ### 2.a  
 
@@ -155,7 +156,19 @@ Minor is an in-order processor model with a fixed pipeline but configurable data
 
 You can find reference [here](https://www.gem5.org/documentation/general_docs/cpu_models/minor_cpu)
 
-
+### 3.a
+The program that I created and used for my simulations is myprog.c with then i compiled for arm into myprog_arm:
+		 
+		//A simple progrma that prints a "A sample C program" output
+		#include<stdio.h>
+		
+		int main()
+		{
+			printf("\nA sample C program\n\n");
+		return 0;
+		
+		}
+		//end
 
 
 
