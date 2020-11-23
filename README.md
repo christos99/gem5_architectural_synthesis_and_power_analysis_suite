@@ -218,7 +218,37 @@ _This is not finalized i would like to add more stuff and reference my answers i
 
 >The TimingSimpleCPU is the version of SimpleCPU that uses timing memory accesses. It stalls on cache accesses and waits for the memory system to respond prior to proceeding. Regardless the time differnce is unsignificant and we can't run into any assumptions for the general performance difference of this 2 processors referring to this simulation.
 
+### 3.c  
 
+#### Third Simulation Run:
+
+CMD: 	
+	
+	build/ARM/gem5.opt configs/example/se.py --cmd=tests/test-progs/hello/bin/arm/linux/myprog_arm --cpu-type=MinorCPU --l1d_size=64kB --l1i_size=16kB --caches -n 12
+	
+		
+ * CPU TYPE = MinorCPU	
+ * configuration file = [se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/se.py)
+ * program file = [myprog_arm](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm)
+ * simulation seconds =  0.000033s
+ 
+ [Reference File](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm%20Results/my_prog_result_n%3D12_MinorCPU_se_py/stats.txt)
+	
+	
+ #### Fourth Simulation Run:
+ 
+ * CMD: 		
+ 	
+		build/ARM/gem5.opt configs/example/se.py --cmd=tests/test-progs/hello/bin/arm/linux/myprog_arm --cpu-type=TimingSimpleCPU --l1d_size=64kB --	l1i_size=16kB --caches  -n 12
+	
+	
+	
+ * CPU TYPE = TimingSimpleCPU	
+ * configuration file = [se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/se.py)
+ * program file = [myprog_arm](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm)
+ * simulation seconds =   0.000037s
+
+[Reference File](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm%20Results/my_prog_result_n%3D12_TimingSimpleCPU_se_py/stats.txt)
 	
 	
 		
