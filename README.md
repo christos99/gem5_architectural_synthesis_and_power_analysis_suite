@@ -3,11 +3,10 @@
 --------------------------------------------------------------------------------------------------
 1.   
 **[Info from starter_se.py, devices.py]**  
-CPU Type = "Minor"  _//Decalred at the command_    
-self.clusters = []   _//line 90 starter_se.py_  
-self.num_cpus = 0    _//line 91 starter_se.py_  
-
-Frequency = 1 Ghz  _//line 95 starter_se.py_    
+* CPU Type = "Minor"  _//Decalred at the command_    
+* self.clusters = []   _//line 90 starter_se.py_  
+* self.num_cpus = 0    _//line 91 starter_se.py_  
+* Frequency = 1 Ghz  _//line 95 starter_se.py_      
 
 * **Basic Units =** 
 	* L1Instruction Cache
