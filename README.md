@@ -105,8 +105,8 @@
 ### 2.b  
 
  Number of Commited Instructions = 5028  
-_This is not finalized i would like to add more stuff and reference my answers if i had the time_
 _The number differs because we use a different system than the one that was used to provide the statistics_
+[**Reference File**](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/stats.txt)
 
 ### 2.c
 _This is not finalized i would like to add more stuff and reference my answers if i had the time_
