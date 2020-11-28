@@ -104,12 +104,16 @@
   * voltage_domain = VoltageDomain(voltage="3.3V")"  //line 48 config.ini
 ### 2.b  
 
- Number of Commited Instructions = 5028  
-_The number differs because we use a different system than the one that was used to provide the statistics_
+Number of Commited Instructions = 5028  
+Number of ops (including micro ops) committed = 5834 
+ 
+_The number differs because in the second case we include the micro operations of the system which are not a part of the program_
 [**Reference File**](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/stats.txt)
 
 ### 2.c
-_This is not finalized i would like to add more stuff and reference my answers if i had the time_
+
+Number of overall L2 Cache (read+write) accesses = 479 
+We could also add the values of L2 cpus.inst = 332 and cpus.data = 147 which is the equivalent to 479
 
 
 **Info from [config.ini](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/config.ini)** 
