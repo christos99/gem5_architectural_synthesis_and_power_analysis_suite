@@ -216,25 +216,25 @@ Simulation done using different configuration file (Before = [starter_se.py](htt
 ### 3.b
 
 Time difference between the 2 simulations  = 0.000037 - 0.000033 = 0.000004s
-_This is not finalized i would like to add more stuff and reference my answers if i had the time_
 
->The TimingSimpleCPU is the version of SimpleCPU that uses timing memory accesses. It stalls on cache accesses and waits for the memory system to respond prior to proceeding. Regardless the time differnce is unsignificant and we can't run into any assumptions for the general performance difference of this 2 processors referring to this simulation.
+
+>The TimingSimpleCPU is the version of SimpleCPU that uses timing memory accesses. It stalls on cache accesses and waits for the memory system to respond prior to proceeding. Regardless the time differnce is unsignificant and we can't run into any assumptions for the general performance difference of this 2 processors referring to this simulation and that occurs because the systems are almost identical with the only exception being the CPU model.
 
 ### 3.c  
 
 #### Third Simulation Run:
-_Simulation run with change of cores value to 12_
+_Simulation run with change of cpu clock speed value to 3GHz_
  * CMD: 	
 	
-		build/ARM/gem5.opt configs/example/se.py --cmd=tests/test-progs/hello/bin/arm/linux/myprog_arm --cpu-type=MinorCPU --l1d_size=64kB --l1i_size=16kB --caches -n 12
+		build/ARM/gem5.opt configs/example/se.py --cmd=tests/test-progs/hello/bin/arm/linux/myprog_arm --cpu-type=MinorCPU --cpu-clock=3GHz --caches
 	
 		
  * CPU TYPE = MinorCPU	
  * configuration file = [se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/se.py)
  * program file = [myprog_arm](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm)
- * simulation seconds =  0.000033s
+ * simulation seconds =  0.000030s
  
- [Reference File](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm%20Results/my_prog_result_n%3D12_MinorCPU_se_py/stats.txt)
+ [Reference File](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm%20Results/myprog_arm_results_MinorCPU_3GHZ/stats.txt)
 	
 	
  #### Fourth Simulation Run:
@@ -242,18 +242,49 @@ _Simulation run with change of cores value to 12_
  
  * CMD: 		
  	
-		build/ARM/gem5.opt configs/example/se.py --cmd=tests/test-progs/hello/bin/arm/linux/myprog_arm --cpu-type=TimingSimpleCPU --l1d_size=64kB --	l1i_size=16kB --caches  -n 12
+		build/ARM/gem5.opt configs/example/se.py --cmd=tests/test-progs/hello/bin/arm/linux/myprog_arm --cpu-type=TimingSimpleCPU --cpu-clock=3GHz --caches
 	
 	
 	
  * CPU TYPE = TimingSimpleCPU	
  * configuration file = [se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/se.py)
  * program file = [myprog_arm](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm)
- * simulation seconds =   0.000037s
+ * simulation seconds =   0.000033s
 
-[Reference File](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm%20Results/my_prog_result_n%3D12_TimingSimpleCPU_se_py/stats.txt)
+[Reference File](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm%20Results/myprog_arm_results_TimingSimple_3GHZ/stats.txt)
+
+#### Fifth Simulation Run:
+_Simulation run with change of memory type to DDR4_2400_8x8_
+ * CMD: 	
+	
+		build/ARM/gem5.opt configs/example/se.py --cmd=tests/test-progs/hello/bin/arm/linux/myprog_arm --cpu-type=MinorCPU --mem-type=DDR4_2400_8x8 --caches
+	
+		
+ * CPU TYPE = MinorCPU	
+ * configuration file = [se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/se.py)
+ * program file = [myprog_arm](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm)
+ * simulation seconds =  0.000031s
+ 
+ [Reference File](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/myprog_arm_results_MinorCPU_DDR4_2400_8x8/stats.txt)
 	
 	
+ #### Sixth Simulation Run:
+ _Simulation run with change memory type to DDR4_2400_8x8_
+ 
+ * CMD: 		
+ 	
+		build/ARM/gem5.opt configs/example/se.py --cmd=tests/test-progs/hello/bin/arm/linux/myprog_arm --cpu-type=TimingSimpleCPU --	mem_type=DDR4_2400_8x8 --caches
+	
+	
+	
+ * CPU TYPE = TimingSimpleCPU	
+ * configuration file = [se.py](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/se.py)
+ * program file = [myprog_arm](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm)
+ * simulation seconds =   0.000036s
+
+[Reference File](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm%20Results/myprog_arm_results_TimingSimple_DDR4_2400_8x8/stats.txt)
+	
+_As we see using the MinorCPU model in all the simulation had not significant but faster simulation time than using the TimingSimpleCPU this is a result of the difference in the architecture that those models have and mostly in the way they use the memmory of the processor._
 		
 
 
