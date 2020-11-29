@@ -107,13 +107,13 @@
 Number of Commited Instructions = 5028  
 Number of ops (including micro ops) committed = 5834 
  
-_The number differs because in the second case we include the micro operations of the system which are not a part of the program_
+> The number differs because in the second case we include the micro operations of the system which are not a part of the simulation
 [**Reference File**](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/stats.txt)
 
 ### 2.c
 
-Number of overall L2 Cache (read+write) accesses = 479 
-We could also add the values of L2 cpus.inst = 332 and cpus.data = 147 which is the equivalent to 479
+Number of overall L2 Cache (read+write) accesses = 479  
+We could also calculate the number of accesses by adding the values of L2 cpus.inst = 332 and cpus.data = 147 which is the equivalent of 479.
 
 
 **Info from [config.ini](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/hello%20Resluts/hello_result_MinorCPU_starter_se_py/config.ini)** 
@@ -284,7 +284,7 @@ _Simulation run with change of memory type to DDR4_2400_8x8_
 
 [Reference File](https://github.com/christos99/9432_Christos_Chrysikos/blob/main/Results%20Folder/myprog_arm%20Results/myprog_arm_results_TimingSimple_DDR4_2400_8x8/stats.txt)
 	
-_As we see using the MinorCPU model in all the simulation had not significant but faster simulation time than using the TimingSimpleCPU this is a result of the difference in the architecture that those models have and mostly in the way they use the memmory of the processor._
+> As we see using the MinorCPU model in all the simulation had not significant but faster simulation time than using the TimingSimpleCPU this is a result of the difference in the architecture that those models have and mostly in the way they use the memmory of the processor. 
 		
 
 
