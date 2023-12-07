@@ -1,7 +1,7 @@
 # Gem5 Architectural Synthesis and Power Analysis Suite for Computer Architecture Labs
 
 ## Overview
-This document provides a consolidated overview of three lab assignments encompassing VHDL for FPGA and ASIC Design, Python Programming for Image Processing, and extensive gem-5 Simulations in Computer Architecture.
+This document provides a consolidated overview of three lab assignments encompassing basic to exteneded gem-5 simulation and intergration with McPAT for In-depth Power Analysis in Computer Architecture.
 
 ### Part 1: gem-5 Simulations - Basic CPU and Cache Configurations
 **Objective**: Analyze CPU and cache configurations using gem-5 simulations.  
