@@ -1,0 +1,6 @@
+Benchmarks	sim_seconds
+spec_results_4GHz-32kB-4-64kB-4-2048kB-16-64/specbzip	0.045532
+spec_results_4GHz-32kB-4-64kB-4-2048kB-16-64/specmcf	0.032386
+spec_results_4GHz-32kB-4-64kB-4-2048kB-16-64/spechmmer	0.029826
+spec_results_4GHz-32kB-4-64kB-4-2048kB-16-64/speclibm	0.132695
+spec_results_4GHz-32kB-4-64kB-4-2048kB-16-64/specsjeng	0.417805

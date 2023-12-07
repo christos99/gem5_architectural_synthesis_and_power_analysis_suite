@@ -1,0 +1,6 @@
+Benchmarks	system.cpu.cpi	sim_seconds	system.cpu.dcache.overall_miss_rate::total	system.cpu.icache.overall_miss_rate::total	system.l2.overall_miss_rate::total
+spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/specbzip	1.603595	0.160359	0.014123	0.000075	0.295235
+spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/specmcf	1.232645	0.123265	0.002062	0.019046	0.067668
+spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/spechmmer	1.185174	0.118517	0.001619	0.000212	0.078295
+spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/speclibm	2.622616	0.262262	0.060972	0.000095	0.999940
+spec_results_1GHz-32kB-4-64kB-4-2048kB-16-64/specsjeng	7.056395	0.705640	0.121831	0.000020	0.999978
