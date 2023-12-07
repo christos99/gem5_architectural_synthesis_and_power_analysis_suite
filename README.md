@@ -1,4 +1,4 @@
-# Comprehensive README for Computer Architecture Labs
+# Gem5 Architectural Synthesis and Power Analysis Suite for Computer Architecture Labs
 
 ## Overview
 This document provides a consolidated overview of three lab assignments encompassing VHDL for FPGA and ASIC Design, Python Programming for Image Processing, and extensive gem-5 Simulations in Computer Architecture.
