@@ -1,0 +1,1670 @@
+#!/bin/sh
+
+
+MCPAT()
+{
+./mcpat  -infile ProcessorDescriptionFiles/ALL_GEM5_CONVERTED/$XML_FOLDER/$XML_SUBFOLDER/$XML_NAME.xml -print_level 5 > MC_PAT_RESULTS/$XML_FOLDER/$XML_SUBFOLDER/$XML_NAME.txt
+}
+
+
+ ##print_energy()
+#{
+#python2 print_energy.py MC_PAT_RESULTS/$XML_FOLDER/$XML_SUBFOLDER/$XML_NAME.txt Benchmarks/Latest_Final_Benchmarks/$XML_FOLDER/$XML_SUBFOLDER/$BENCHMARK/stats.txt > EnergyResults/$XML_FOLDER/$XML_SUBFOLDER/$XML_NAME-energy.txt
+#}
+
+################################################
+################################################
+################################################
+################################################
+XML_FOLDER="L1_Cache"
+XML_SUBFOLDER="64kB"
+						
+XML_NAME="L1_64_specbzip"
+						
+
+
+OUTPUT="$XML_NAME"
+						## 1.1.1
+NUMBER="1.1.1"
+
+mkdir "MC_PAT_RESULTS"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+cd MC_PAT_RESULTS
+
+mkdir "$XML_FOLDER"
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache"
+
+XML_SUBFOLDER="64kB"
+
+XML_NAME="L1_64_spechmmer"
+
+
+
+OUTPUT="$XML_NAME"				## 1.1.2
+
+
+
+NUMBER="1.1.2"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache"
+
+XML_SUBFOLDER="64kB"
+
+XML_NAME="L1_64_speclibm"
+
+
+
+OUTPUT="$XML_NAME"
+						## 1.1.3
+
+
+NUMBER="1.1.3"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache"
+
+XML_SUBFOLDER="64kB"
+
+XML_NAME="L1_64_specmcf"
+
+
+
+OUTPUT="$XML_NAME"				## 1.1.4
+
+
+NUMBER="1.1.4"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache"
+
+XML_SUBFOLDER="64kB"
+
+XML_NAME="L1_64_specjeng"
+
+
+
+OUTPUT="$XML_NAME"				## 1.1.5
+
+
+NUMBER="1.1.5"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+################################################
+
+
+
+XML_FiLDER="L1_Cache"
+
+XML_SUBFOLDER="128kB"
+
+XML_NAME="L1_128_specbzip"
+
+
+						## 1.2.1
+OUTPUT="$XML_NAME"
+
+NUMBER="1.2.1"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+cd MC_PAT_RESULTS
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache"
+
+XML_SUBFOLDER="128kB"
+
+XML_NAME="L1_128_spechmmer"
+
+
+			
+			
+						## 1.2.2
+OUTPUT="$XML_NAME"
+
+NUMBER="1.2.2"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+MCPAT 
+ echo "Done with number $NUMBER"
+
+################################################
+XML_FOLDER="L1_Cache"
+
+XML_SUBFOLDER="128kB"
+
+XML_NAME="L1_128_speclibm"
+
+
+
+
+						## 1.2.3
+OUTPUT="$XML_NAME"
+
+NUMBER="1.2.3"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+MCPAT 
+ echo "Done with number $NUMBER"
+
+################################################
+XML_FOLDER="L1_Cache"
+
+XML_SUBFOLDER="128kB"
+
+XML_NAME="L1_128_specmcf"
+
+
+						## 1.2.4
+OUTPUT="$XML_NAME"
+
+NUMBER="1.2.4"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache"
+
+XML_SUBFOLDER="128kB"
+
+XML_NAME="L1_128_specjeng"
+
+
+						## 1.2.5
+OUTPUT="$XML_NAME"
+
+NUMBER="1.2.5"
+
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+################################################
+
+
+XML_FOLDER="L1_Cache"
+
+XML_SUBFOLDER="256kB"
+
+XML_NAME="L1_256_specbzip"
+
+
+						## 1.3.1
+OUTPUT="$XML_NAME"
+
+NUMBER="1.3.1"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+cd MC_PAT_RESULTS
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache"
+
+XML_SUBFOLDER="256kB"
+
+XML_NAME="L1_256_spechmmer"
+
+
+
+
+
+						## 1.3.2
+OUTPUT="$XML_NAME"
+
+NUMBER="1.3.2"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache"
+
+XML_SUBFOLDER="256kB"
+
+XML_NAME="L1_256_speclibm"
+
+
+
+
+
+						## 1.3.3
+OUTPUT="$XML_NAME"
+
+NUMBER="1.3.3"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache"
+
+XML_SUBFOLDER="256kB"
+
+XML_NAME="L1_256_specmcf"
+
+
+						## 1.3.4
+OUTPUT="$XML_NAME"
+
+NUMBER="1.3.4"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+################################################
+XML_FOLDER="L1_Cache"
+
+XML_SUBFOLDER="256kB"
+						## 1.3.5
+XML_NAME="L1_256_specjeng"
+
+
+
+NUMBER="1.3.5"
+
+OUTPUT="$XML_NAME"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+echo "Done with L1 Cache Size"
+
+
+
+################################################
+################################################
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="6"
+						## 2.1.1
+XML_NAME="L1_Assoc_6_specbzip"
+
+
+
+OUTPUT="$XML_NAME"
+
+NUMBER="2.1.1"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+cd MC_PAT_RESULTS
+mkdir "$XML_FOLDER"
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="6"
+
+XML_NAME="L1_Assoc_6_spechmmer"
+
+
+
+OUTPUT="$XML_NAME"				## 2.1.2
+
+
+
+NUMBER="2.1.2"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="6"
+
+XML_NAME="L1_Assoc_6_speclibm"
+
+
+
+
+OUTPUT="$XML_NAME"
+						## 2.1.3
+
+
+NUMBER="2.1.3"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="6"
+
+XML_NAME="L1_Assoc_6_specmcf"
+
+
+
+OUTPUT="$XML_NAME"				## 2.1.4
+
+
+NUMBER="2.1.4"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="6"
+
+XML_NAME="L1_Assoc_6_specjeng"
+
+
+
+OUTPUT="$XML_NAME"				## 2.1.5
+
+
+NUMBER="2.1.5"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+################################################
+
+
+
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="8"
+
+XML_NAME="L1_Assoc_8_specbzip"
+
+
+						## 2.2.1
+OUTPUT="$XML_NAME"
+
+NUMBER="2.2.1"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+cd MC_PAT_RESULTS
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="8"
+
+XML_NAME="L1_Assoc_8_spechmmer"
+
+
+			
+			
+						## 2.2.2
+OUTPUT="$XML_NAME"
+
+NUMBER="2.2.2"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="8"
+
+XML_NAME="L1_Assoc_8_speclibm"
+
+
+
+						## 2.2.3
+OUTPUT="$XML_NAME"
+
+NUMBER="2.2.3"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER" 
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="8"
+
+XML_NAME="L1_Assoc_8_specmcf"
+
+
+						## 2.2.4
+OUTPUT="$XML_NAME"
+
+NUMBER="2.2.4"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="8"
+
+XML_NAME="L1_Assoc_8_specjeng"
+
+
+						## 2.2.5
+OUTPUT="$XML_NAME"
+
+NUMBER="2.2.5"
+
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+################################################
+
+
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="10"
+
+XML_NAME="L1_Assoc_10_specbzip"
+
+
+						## 2.3.1
+OUTPUT="$XML_NAME"
+
+NUMBER="2.3.1"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+cd MC_PAT_RESULTS
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="10"
+
+XML_NAME="L1_Assoc_10_spechmmer"
+
+
+						## 2.3.2
+OUTPUT="$XML_NAME"
+
+NUMBER="2.3.2"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="10"
+
+XML_NAME="L1_Assoc_10_speclibm"
+
+
+
+						## 2.3.3
+OUTPUT="$XML_NAME"
+
+NUMBER="2.3.3"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="10"
+
+XML_NAME="L1_Assoc_10_specmcf"
+
+
+						## 2.3.4
+OUTPUT="$XML_NAME"
+
+NUMBER="2.3.4"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="10"
+						## 2.3.5
+XML_NAME="L1_Assoc_10_specjeng"
+
+
+
+NUMBER="2.3.5"
+
+OUTPUT="$XML_NAME"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+################################################
+
+
+
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="12"
+
+XML_NAME="L1_Assoc_12_specbzip"
+
+
+						## 2.4.1
+OUTPUT="$XML_NAME"
+
+NUMBER="2.4.1"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+cd MC_PAT_RESULTS
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="12"
+
+XML_NAME="L1_Assoc_12_spechmmer"
+
+
+						## 2.4.2
+OUTPUT="$XML_NAME"
+
+NUMBER="2.4.2"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="12"
+
+XML_NAME="L1_Assoc_12_speclibm"
+
+
+
+						## 2.4.3
+OUTPUT="$XML_NAME"
+
+NUMBER="2.4.3"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="12"
+
+XML_NAME="L1_Assoc_12_specmcf"
+
+
+						## 2.4.4
+OUTPUT="$XML_NAME"
+
+NUMBER="2.4.4"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+################################################
+XML_FOLDER="L1_Cache_Assoc"
+
+XML_SUBFOLDER="12"
+						## 2.4.5
+XML_NAME="L1_Assoc_12_specjeng"
+
+
+
+NUMBER="2.4.5"
+
+OUTPUT="$XML_NAME"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ 
+echo "Done with number $NUMBER"
+echo "Done with L1 Cache Association"
+
+
+
+################################################
+################################################
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="512kB"
+						## 3.1.1
+XML_NAME="L2_512kB_specbzip"
+
+
+
+OUTPUT="$XML_NAME"
+
+NUMBER="3.1.1"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+cd MC_PAT_RESULTS
+mkdir "$XML_FOLDER"
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="512kB"
+
+XML_NAME="L2_512kB_spechmmer"
+
+
+
+OUTPUT="$XML_NAME"				## 3.1.2
+
+
+
+NUMBER="3.1.2"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="512kB"
+
+XML_NAME="L2_512kB_speclibm"
+
+
+
+
+OUTPUT="$XML_NAME"
+						## 3.1.3
+
+
+NUMBER="3.1.3"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="512kB"
+
+XML_NAME="L2_512kB_specmcf"
+
+
+
+OUTPUT="$XML_NAME"				## 3.1.4
+
+
+NUMBER="3.1.4"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="512kB"
+
+XML_NAME="L2_512kB_specjeng"
+
+
+
+OUTPUT="$XML_NAME"				## 3.1.5
+
+
+NUMBER="3.1.5"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+################################################
+
+
+
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="1024kB"
+
+XML_NAME="L2_1024kB_specbzip"
+
+
+						## 3.2.1
+OUTPUT="$XML_NAME"
+
+NUMBER="3.2.1"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+cd MC_PAT_RESULTS
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="1024kB"
+
+XML_NAME="L2_1024kB_spechmmer"
+
+
+			
+			
+						## 3.2.2
+OUTPUT="$XML_NAME"
+
+NUMBER="3.2.2"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="1024kB"
+
+XML_NAME="L2_1024kB_speclibm"
+
+
+
+						## 3.2.3
+OUTPUT="$XML_NAME"
+
+NUMBER="3.2.3"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="1024kB"
+
+XML_NAME="L2_1024kB_specmcf"
+
+
+						## 3.2.4
+OUTPUT="$XML_NAME"
+
+NUMBER="3.2.4"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="1024kB"
+
+XML_NAME="L2_1024kB_specjeng"
+
+
+						## 3.2.5
+OUTPUT="$XML_NAME"
+
+NUMBER="3.2.5"
+
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+################################################
+
+
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="2048kB"
+
+XML_NAME="L2_2048kB_specbzip"
+
+
+						## 3.3.1
+OUTPUT="$XML_NAME"
+
+NUMBER="3.3.1"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+cd MC_PAT_RESULTS
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="2048kB"
+
+XML_NAME="L2_2048kB_spechmmer"
+
+
+						## 3.3.2
+OUTPUT="$XML_NAME"
+
+NUMBER="3.3.2"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="2048kB"
+
+XML_NAME="L2_2048kB_speclibm"
+
+
+
+						## 3.3.3
+OUTPUT="$XML_NAME"
+
+NUMBER="3.3.3"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="2048kB"
+
+XML_NAME="L2_2048kB_specmcf"
+
+
+						## 3.3.4
+OUTPUT="$XML_NAME"
+
+NUMBER="3.3.4"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="2048kB"
+						## 3.3.5
+XML_NAME="L2_2048kB_specjeng"
+
+
+
+NUMBER="3.3.5"
+
+OUTPUT="$XML_NAME"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+echo "Done with L2 Cache Association"
+
+################################################
+################################################
+
+
+
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="4096kB"
+
+XML_NAME="L2_4096kB_specbzip"
+
+
+						## 3.4.1
+OUTPUT="$XML_NAME"
+
+NUMBER="3.4.1"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+cd MC_PAT_RESULTS
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="4096kB"
+
+XML_NAME="L2_4096kB_spechmmer"
+
+
+						## 3.4.2
+OUTPUT="$XML_NAME"
+
+NUMBER="3.4.2"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="4096kB"
+
+XML_NAME="L2_4096kB_speclibm"
+
+
+
+						## 3.4.3
+OUTPUT="$XML_NAME"
+
+NUMBER="3.4.3"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="4096kB"
+
+XML_NAME="L2_4096kB_specmcf"
+
+
+						## 3.4.4
+OUTPUT="$XML_NAME"
+
+NUMBER="3.4.4"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+################################################
+XML_FOLDER="L2_Cache"
+
+XML_SUBFOLDER="4096kB"
+						## 3.4.5
+XML_NAME="L2_4096kB_specjeng"
+
+
+
+NUMBER="3.4.5"
+
+OUTPUT="$XML_NAME"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ 
+echo "Done with number $NUMBER"
+echo "Done with L2 Cache"
+
+
+
+################################################
+################################################
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="4"
+						## 4.1.1
+XML_NAME="L2_Assoc_4_specbzip"
+
+
+
+OUTPUT="$XML_NAME"
+
+NUMBER="4.1.1"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+cd MC_PAT_RESULTS
+mkdir "$XML_FOLDER"
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="4"
+
+XML_NAME="L2_Assoc_4_spechmmer"
+
+
+
+OUTPUT="$XML_NAME"				## 4.1.2
+
+
+
+NUMBER="4.1.2"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="4"
+
+XML_NAME="L2_Assoc_4_speclibm"
+
+
+
+
+OUTPUT="$XML_NAME"
+						## 4.1.3
+
+
+NUMBER="4.1.3"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="4"
+
+XML_NAME="L2_Assoc_4_specmcf"
+
+
+
+OUTPUT="$XML_NAME"				## 4.1.4
+
+
+NUMBER="4.1.4"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="4"
+
+XML_NAME="L2_Assoc_4_specjeng"
+
+
+
+OUTPUT="$XML_NAME"				## 4.1.5
+
+
+NUMBER="4.1.5"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+################################################
+
+
+
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="8"
+
+XML_NAME="L2_Assoc_8_specbzip"
+
+
+						## 4.2.1
+OUTPUT="$XML_NAME"
+
+NUMBER="4.2.1"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+cd MC_PAT_RESULTS
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="8"
+
+XML_NAME="L2_Assoc_8_spechmmer"
+
+
+			
+			
+						## 4.2.2
+OUTPUT="$XML_NAME"
+
+NUMBER="4.2.2"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="8"
+
+XML_NAME="L2_Assoc_8_speclibm"
+
+
+
+						## 4.2.3
+OUTPUT="$XML_NAME"
+
+NUMBER="4.2.3"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="8"
+
+XML_NAME="L2_Assoc_8_specmcf"
+
+
+						## 4.2.4
+OUTPUT="$XML_NAME"
+
+NUMBER="4.2.4"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="8"
+
+XML_NAME="L2_Assoc_8_specjeng"
+
+
+						## 4.2.5
+OUTPUT="$XML_NAME"
+
+NUMBER="4.2.5"
+
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+################################################
+
+
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="16"
+
+XML_NAME="L2_Assoc_16_specbzip"
+
+
+						## 4.3.1
+OUTPUT="$XML_NAME"
+
+NUMBER="4.3.1"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+cd MC_PAT_RESULTS
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="16"
+
+XML_NAME="L2_Assoc_16_spechmmer"
+
+
+						## 4.3.2
+OUTPUT="$XML_NAME"
+
+NUMBER="4.3.2"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="16"
+
+XML_NAME="L2_Assoc_16_speclibm"
+
+
+
+						## 4.3.3
+OUTPUT="$XML_NAME"
+
+NUMBER="4.3.3"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="16"
+
+XML_NAME="L2_Assoc_16_specmcf"
+
+
+						## 4.3.4
+OUTPUT="$XML_NAME"
+
+NUMBER="4.3.4"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="16"
+						## 4.3.5
+XML_NAME="L2_Assoc_16_specjeng"
+
+
+
+NUMBER="4.3.5"
+
+OUTPUT="$XML_NAME"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+################################################
+
+
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="32"
+
+XML_NAME="L2_Assoc_32_specbzip"
+
+
+						## 4.4.1
+OUTPUT="$XML_NAME"
+
+NUMBER="4.4.1"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+cd MC_PAT_RESULTS
+cd $XML_FOLDER
+mkdir "$XML_SUBFOLDER"
+cd ../../
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="32"
+
+XML_NAME="L2_Assoc_32_spechmmer"
+
+
+						## 4.4.2
+OUTPUT="$XML_NAME"
+
+NUMBER="4.4.2"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="32"
+
+XML_NAME="L2_Assoc_32_speclibm"
+
+
+
+						## 4.4.3
+OUTPUT="$XML_NAME"
+
+NUMBER="4.4.3"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="32"
+
+XML_NAME="L2_Assoc_32_specmcf"
+
+
+						## 4.4.4
+OUTPUT="$XML_NAME"
+
+NUMBER="4.4.4"
+
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT
+  echo "Done with number $NUMBER"
+
+################################################
+XML_FOLDER="L2_Cache_Assoc"
+
+XML_SUBFOLDER="32"
+						## 4.4.5
+XML_NAME="L2_Assoc_32_specjeng"
+
+
+
+NUMBER="4.4.5"
+
+OUTPUT="$XML_NAME"
+
+echo "Calculating Energy for $NUMBER $XML_NAME"
+
+ MCPAT 
+ echo "Done with number $NUMBER"
+echo "Done with L2 Cache Association"
+echo "Done with all Energy Calculations"
+################################################
+
